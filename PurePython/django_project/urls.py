@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from firstapp.views import Hello, HelloName, Add, Multiply, Brothers, Fibbo, Game, HelloPath, Article, Greetings, Calc, \
-    RandomGenerator, Index, Form, FizzBuzz, MultiplyTemplate, RpgGame
+    RandomGenerator, Index, Form, FizzBuzz, MultiplyTemplate, RpgGame, ListComments, Main, Login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,5 +36,8 @@ urlpatterns = [
     path('fizzBuzz/<int:n>', FizzBuzz),
     path('multiplyTemplate/<int:n>', MultiplyTemplate),
     path('multiplyTemplate/', MultiplyTemplate),
-    path('rpgGame/', RpgGame)
+    path('rpgGame/', RpgGame),
+    path('fakeComments/', ListComments),
+    path('main/', Main),
+    path('login/', Login)
 ]

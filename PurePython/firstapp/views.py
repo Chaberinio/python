@@ -1,6 +1,8 @@
+import random
+
 from django.http import HttpResponse
 from django.shortcuts import render
-import random
+from . import fake_data
 
 
 # Create your views here.
@@ -139,13 +141,13 @@ def RandomGenerator(request, min, max,throws=1):
     return HttpResponse(sum)
 
 def Index(request):
-    return render(request, 'first_app/index.html', context={
+    return render(request, 'firstapp/index.html', context={
                                             'messege':'Wiadomość z szablonu',
                                             'names' : ['Jan','Ewa','Adam','Maciej']})
 
 def Form(request):
     if request.method == "GET":
-        return render(request, 'first_app/form.html')
+        return render(request, 'firstapp/form.html')
     if request.method == "POST":
         return  HttpResponse(request.POST.get('test', 'brak parametru'))
 
@@ -160,10 +162,10 @@ def FizzBuzz(request, n = 1):
             data.append('Fizz')
         else:
             data.append(i)
-    return render(request, 'first_app/fizz_buzz.html', context={'data': data})
+    return render(request, 'firstapp/fizz_buzz.html', context={'data': data})
 
 def MultiplyTemplate(request, n = 5):
-    return render(request, 'first_app/multiply.html', context={'elements' : range(1, n+1)})
+    return render(request, 'firstapp/multiply.html', context={'elements' : range(1, n + 1)})
 
 def RpgGame(request):
     PlayerName = 'Gracz'
@@ -203,7 +205,7 @@ def RpgGame(request):
             GameResult.append(result)
         turn += 1
 
-    return render(request, 'first_app/rpg_game.html', context={'EnemyAtk' : EnemyAtk,
+    return render(request, 'firstapp/rpg_game.html', context={'EnemyAtk' : EnemyAtk,
                                                                 'EnemyHp' : EnemyHp,
                                                                 'PlayerAtk' : PlayerAtk,
                                                                 'PlayerHp': PlayerHp,
@@ -214,3 +216,15 @@ def RpgGame(request):
                                                                 'PlayerDef' : PlayerDef,
                                                                 'EnemyDef' : EnemyDef,
                                                                 'GameResult' : GameResult})
+
+def ListComments(request):
+    return render(request, 'firstapp/list_comment.html', context={'elements' : fake_data.fake_comments})
+
+def Main(reqest):
+    return render(reqest, 'firstapp/main.html')
+
+def Login(request):
+    if request.method == "GET":
+        return render(request, 'firstapp/login.html')
+    if request.method == "POST":
+        pass
