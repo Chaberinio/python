@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table id="player">
+        <tr>
+            <td>Player Name</td><td>{{ PlayerName }}</td>
+        </tr>
+        <tr>
+            <td>Player attack</td><td>{{ PlayerAtk }}</td>
+        </tr>
+        <tr>
+            <td>Player defense</td><td>{{ PlayerDef }}</td>
+        </tr>
+        <tr>
+            <td>Player weapon</td><td>{{ PlayerWeapon }}</td>
+        </tr>
+        <tr>
+            <td>Player life hit points</td><td>{{ PlayerHp }}</td>
+        </tr>
+    </table>
+    <table id="enemy">
+        <tr>
+            <td>Enemy Name</td><td>{{ EnemyName }}</td>
+        </tr>
+        <tr>
+            <td>Enemy attack</td><td>{{ EnemyAtk }}</td>
+        </tr>
+        <tr>
+            <td>Enemy defense</td><td>{{ EnemyDef }}</td>
+        </tr>
+        <tr>
+            <td>Enemy weapon</td><td>{{ EnemyWeapon }}</td>
+        </tr>
+        <tr>
+            <td>Enemy life hit points</td><td>{{ EnemyHp }}</td>
+        </tr>
+    </table>
+    <div id="result">
+        {% for turn in GameResult %}
+            <p>{{ turn }}</p>
+        {% endfor %}
+    </div>
+
+
+    <style>
+        #player{
+            float: left;
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+        #player td, #player tr{
+                        border: 1px solid blue;
+            border-collapse: collapse;
+        }
+        #enemy{
+            float: right;
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+        #enemy td, #enemy tr {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+        #result {
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

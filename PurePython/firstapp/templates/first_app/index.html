@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Witaj w świecie template'ów Django</h1>
+    <h2>{{ messege }}</h2>
+    <h3>{{ request.GET.name }}</h3>
+    <ul>
+        {% for name in names %}
+            <li>{% if name == 'Ewa' %} {{ name | upper }} {% else %} {{ name |capfirst }} {% endif %}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

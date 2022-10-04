@@ -1,16 +1,45 @@
-# This is a sample Python script.
+'''my_dict = {}
+my_dict['drzewo'] = 'liściaste'
+print(my_dict)
+my_dict['drzewo'] = 'iglaste'
+print(my_dict)
+del my_dict['drzewo']
+print(my_dict)
+print(my_dict.get('drzewo', 'nie ma'))'''
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+'''colors = ['red', 'green', 'red', 'blue', 'green', 'red', 'orange', 'purple', 'red']
+counted_colors = {}
+
+for x in colors:
+    if x in counted_colors:
+        counted_colors[x] += 1
+    else:
+        counted_colors[x] = 1
+
+print(counted_colors)
+
+print(set(colors))'''
+
+names = ['Ala', 'Ela', 'Ola', 'Iwona', 'Ilona', 'Adam', 'Robert', 'Małgorzata', 'Dagmara']
+
+'''genders = {'Male': [], 'Female': []}
+
+for x in names:
+    if x.endswith('a'):
+        genders['Female'] += [x]
+    else:
+        genders['Male'] += [x]
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+print(genders['Male'])
+print(genders['Female'])'''
 
+name_length = {}
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+for x in names:
+    if len(x) in name_length:
+        name_length[len(x)] += [x]
+    else:
+        name_length[len(x)] = [x]
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(name_length)
