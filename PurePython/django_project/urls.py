@@ -14,30 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from firstapp.views import Hello, HelloName, Add, Multiply, Brothers, Fibbo, Game, HelloPath, Article, Greetings, Calc, \
-    RandomGenerator, Index, Form, FizzBuzz, MultiplyTemplate, RpgGame, ListComments, Main, Login
+from django.urls import path, include
+from firstapp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Index),
-    path('helloname/<str:name>', HelloPath),
-    path('add/', Add),
-    path('multiply/<int:n>', Multiply),
-    path('brothers/', Brothers),
-    path('fibbo/', Fibbo),
-    path('game/', Game),
-    path('article/<int:id>', Article),
-    path('greetings/<str:name>/<int:num>/', Greetings),
-    path('calc/<int:numA>/<str:operation>/<int:numB>', Calc),
-    path('randomGenerator/<int:min>/<int:max>', RandomGenerator),
-    path('randomGenerator/<int:min>/<int:max>/<int:throws>', RandomGenerator),
-    path('form/', Form),
-    path('fizzBuzz/<int:n>', FizzBuzz),
-    path('multiplyTemplate/<int:n>', MultiplyTemplate),
-    path('multiplyTemplate/', MultiplyTemplate),
-    path('rpgGame/', RpgGame),
-    path('fakeComments/', ListComments),
-    path('main/', Main),
-    path('login/', Login)
+    path('', include('firstapp.urls')),
+    path('game/', include('games_app.urls')),
+
+
 ]

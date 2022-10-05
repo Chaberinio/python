@@ -6,6 +6,10 @@
 </head>
 <body>
     <h1>Witaj w świecie template'ów Django</h1>
+    <form method="post" action="/view/">
+        <button>Wyślij</button>
+        {% csrf_token %}
+    </form>
     <h2>{{ messege }}</h2>
     <h3>{{ request.GET.name }}</h3>
     <ul>

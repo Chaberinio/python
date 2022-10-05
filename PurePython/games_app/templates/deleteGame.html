@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'game_app/style.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/game/deleteGame/{{ game.pk }}">
+    {% csrf_token %}
+    <h1>Czy chcesz usunąć {{ game.name }}?</h1>
+    <input type="submit" name="delete" value="Usuń" id="submitYes">
+    <input type="submit" name="cancel" value="Anuluj" id="delNo">
+</form>
+
+</body>
+</html>

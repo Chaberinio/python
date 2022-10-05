@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    background-color: blueviolet;
+}
+table{
+    border: 3px solid crimson;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    margin: auto;
+    background-color: lightseagreen;
+}
+th {
+    font-family: "Comic Sans MS";
+    color: darkorchid;
+    font-size: 1rem;
+}
+h1 {
+    font-family: "Comic Sans MS";
+    color: crimson;
+    font-size: 2rem;
+}
+td{
+    border: 2px dashed darkmagenta;
+    border-collapse: collapse;
+    color: darkorchid;
+    font-size: 1rem;
+    font-family: "Comic Sans MS";
+}
+input[type="text"]{
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1.5rem;
+
+}
+#add {
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: "Comic Sans MS";
+    color: crimson;
+
+}
+
+a, a:visited, a:link {
+    text-decoration: none;
+    color: darkorchid;
+}
+
+#submitYes {
+    background-color: greenyellow;
+    font-size: 2rem;
+}
+
+#delNo {
+    background-color: firebrick;
+    font-size: 2rem;
+
+}

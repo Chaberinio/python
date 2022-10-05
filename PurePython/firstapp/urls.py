@@ -1,0 +1,30 @@
+from django.contrib import admin
+from django.urls import path
+from firstapp.views import *
+urlpatterns = [
+    path('', Index),
+    path('helloname/<str:name>', HelloPath),
+    path('add/', Add),
+    path('multiply/<int:n>', Multiply),
+    path('brothers/', Brothers),
+    path('fibbo/', Fibbo),
+    path('game/', Game),
+    path('article/<int:id>', Article),
+    path('greetings/<str:name>/<int:num>/', Greetings),
+    path('calc/<int:numA>/<str:operation>/<int:numB>', Calc),
+    path('randomGenerator/<int:min>/<int:max>', RandomGenerator),
+    path('randomGenerator/<int:min>/<int:max>/<int:throws>', RandomGenerator),
+    path('form/', Form),
+    path('fizzBuzz/<int:n>', FizzBuzz),
+    path('multiplyTemplate/<int:n>', MultiplyTemplate),
+    path('multiplyTemplate/', MultiplyTemplate),
+    path('rpgGame/', RpgGame),
+    path('fakeComments/', ListComments),
+    path('main/', Main),
+    path('login/', Login),
+    path('addProduct/', AddProduct),
+    path('show/', ShowProduct),
+    path('view/',FormViev.as_view()),
+    path('pizza/',PizzaView.as_view()),
+    path('car/', CarView.as_view()),
+]

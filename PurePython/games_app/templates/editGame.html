@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'game_app/style.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<h1>Edytuj grę!</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="name" value="{{ game.name }}"> <br>
+        <input type="text" name="description" value="{{ game.description }}"> <br>
+        <input type="text" name="rating" value="{{ game.rating }}"> <br>
+        <input type="text" name="price" value="{{ game.price }}"> <br>
+        <input type="submit" value="Wyślij" id="submitYes">
+    </form>
+</body>
+</html>

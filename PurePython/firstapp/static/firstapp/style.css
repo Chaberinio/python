@@ -1,2 +1,26 @@
 h1 { color: #10addd}
 p { color: crimson}
+
+#shop_table th {
+    color: crimson;
+    font-size: 2rem;
+}
+
+#shop_table tr:nth-child(2n) td{
+    color: deeppink;
+    border-top: 3px solid crimson;
+    border-bottom: 3px solid crimson;
+}
+#shop_table tr:nth-child(2n) td:first-child{
+    border-left: 3px solid crimson;
+}
+#shop_table tr:nth-child(2n) td:last-child{
+    border-right: 3px solid crimson;
+}
+
+#shop_table {
+    border: 3px dashed cadetblue;
+    font-family: "Comic Sans MS";
+    margin: auto;
+    border-collapse: collapse;
+}

@@ -1,8 +1,32 @@
 import random
 
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.views import View
+
 from . import fake_data
+
+class FormViev(View):
+    def get(self,request):
+        return HttpResponse('Jesteśmy w metodzie GET')
+
+    def post(self,request):
+        return HttpResponse('Jesteśmy w metodzie POST')
+
+class PizzaView(View):
+    def get(self, request):
+        return render(request, 'firstapp/pizza.html')
+
+    def post(self,request):
+        dodatki = request.POST.getlist('pizza')
+        return  HttpResponse(", ".join(dodatki))
+
+class CarView(View):
+    def get(self,request):
+        return render(request, 'firstapp/car.html')
+    def post(self,request):
+        auto = request.POST.get('car')
+        return  HttpResponse(auto)
 
 
 # Create your views here.
@@ -228,3 +252,16 @@ def Login(request):
         return render(request, 'firstapp/login.html')
     if request.method == "POST":
         pass
+
+products = {}
+
+def AddProduct(request):
+
+    if request.method == 'GET':
+        return render(request, 'firstapp/add_product_form.html')
+    elif request.method == 'POST':
+        products[request.POST.get('product')]=request.POST.get('price')
+        return redirect("/show")
+
+def ShowProduct(request):
+    return render(request, 'firstapp/product_show.html', context={'elements' : products})

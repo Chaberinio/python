@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Wybierz samochód do wypożyczenia</h1>
+    <form method="post">
+        {% csrf_token %}
+        <select name="car">
+            <option value="Ferrari">Ferrari</option>
+            <option value="Maybach">Maybach</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Lexus">Lexus</option>
+        </select>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>

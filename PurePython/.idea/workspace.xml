@@ -14,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -26,7 +26,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2FcAOOXUnkkuoVE774JmecyamAZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -40,14 +40,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/chabrowskij/Desktop/python/PurePython/firstapp/templates/first_app",
+    "last_opened_file_path": "C:/Users/chabrowskij/Desktop/python/PurePython/games_app/static/game_app",
     "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "editor.preferences.import",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "typescript.add.unambiguous.imports.on.the.fly": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "sqlite"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chabrowskij\Desktop\python\PurePython\games_app\static\game_app" />
       <recent name="C:\Users\chabrowskij\Desktop\python\PurePython\firstapp\templates\first_app" />
     </key>
   </component>
@@ -87,7 +94,9 @@
       <workItem from="1664781516064" duration="229000" />
       <workItem from="1664781803639" duration="248000" />
       <workItem from="1664782122744" duration="17325000" />
-      <workItem from="1664863656554" duration="18571000" />
+      <workItem from="1664863656554" duration="18876000" />
+      <workItem from="1664949770879" duration="5107000" />
+      <workItem from="1664954908947" duration="16937000" />
     </task>
     <servers />
   </component>
