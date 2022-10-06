@@ -13,9 +13,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -40,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/chabrowskij/Desktop/python/PurePython/games_app/static/game_app",
+    "last_opened_file_path": "C:/Users/chabrowskij/Desktop/python/PurePython/gadugadu_app/static/gadugadu_app",
     "list.type.of.created.stylesheet": "CSS",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "typescript.add.unambiguous.imports.on.the.fly": "true"
@@ -54,6 +54,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chabrowskij\Desktop\python\PurePython\gadugadu_app\static\gadugadu_app" />
       <recent name="C:\Users\chabrowskij\Desktop\python\PurePython\games_app\static\game_app" />
       <recent name="C:\Users\chabrowskij\Desktop\python\PurePython\firstapp\templates\first_app" />
     </key>
@@ -96,7 +97,9 @@
       <workItem from="1664782122744" duration="17325000" />
       <workItem from="1664863656554" duration="18876000" />
       <workItem from="1664949770879" duration="5107000" />
-      <workItem from="1664954908947" duration="16937000" />
+      <workItem from="1664954908947" duration="17126000" />
+      <workItem from="1664976829794" duration="585000" />
+      <workItem from="1665036190186" duration="22248000" />
     </task>
     <servers />
   </component>

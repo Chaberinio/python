@@ -9,16 +9,19 @@
 <body>
 {% block main %}
     <a href="/game/addGame/" id="add">Dodaj</a>
-<table>
-    <tr>
-        <th colspan="3">Tytuł</th>
-    </tr>
-    {% for game in games %}
+    <table>
         <tr>
-            <td><a href='/game/show/{{ game.pk }}'>{{ game.name }}</a></td><td><a href="/game/editGame/{{ game.pk }}">Edytuj</a></td><td><a href="/game/showDeleteGame/{{ game.pk }}">Usuń</a></td>
+            <th colspan="3">Tytuł</th>
         </tr>
-    {% endfor %}
-</table>
+        {% for game in games %}
+            <tr>
+                <td><a href='/game/show/{{ game.pk }}'>{{ game.name }}</a></td>
+                <td><a href="platform/{{ game.platform.pk }}">{{ game.platform.name }}</a></td>
+                <td><a href="/game/editGame/{{ game.pk }}">Edytuj</a></td>
+                <td><a href="/game/showDeleteGame/{{ game.pk }}">Usuń</a></td>
+            </tr>
+        {% endfor %}
+    </table>
 {% endblock main %}
 
 

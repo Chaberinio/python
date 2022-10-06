@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+{% block main %}
+    <div class="container w-75">
+        <div class="col-sm-12">
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr class="table-dark">
+                    <th class="col text-start">Tytuł</th>
+                    <th class="col text-start">Autor</th>
+                    <th class="col text-start">Opis</th>
+                    <th class="col text-end">Ilość stron</th>
+                </tr>
+                </thead>
+                {% for book in books %}
+                    <tr onclick="window.location.href='/library_app/edit/{{ book.pk }}'">
+                        <td class="col">{{ book.title }}</td>
+                        <td class="col text-start">{{ book.author }}</td>
+                        <td class="col text-start">{{ book.description }}</td>
+                        <td class="col text-end">{{ book.page_count }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <a href="/library_app/add" class="btn btn-dark col-sm-12">Dodaj książkę</a>
+    </div>
+{% endblock main %}
+</body>
+</html>

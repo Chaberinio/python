@@ -1,0 +1,17 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'gadugadu_app/style.css' %}">
+    <title>Title</title>
+</head>
+<body>
+    {% for message in messages %}
+        <p>{{ message.sender }}</p><br>
+        <div>
+        <p>{{ message.description }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>

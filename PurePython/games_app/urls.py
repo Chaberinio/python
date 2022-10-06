@@ -8,7 +8,8 @@ urlpatterns = [
     path('deleteGame/<int:pk>', DeleteGame ),
     path('showDeleteGame/<int:pk>', ShowDeleteGame),
     path('addGame/', AddGame),
-    path('editGame/<int:pk>', EditGame)
+    path('editGame/<int:pk>', EditGame),
+    path('show/platform/<int:pk>', ShowPlatforms)
 
 
 ]

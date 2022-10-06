@@ -3,20 +3,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-        <link rel="stylesheet" href="{% static 'game_app/style.css' %}">
+    <link rel="stylesheet" href="{% static 'game_app/style.css' %}">
 
     <title>Title</title>
 </head>
 <body>
 {% block main %}
-<table>
-    <tr>
-        <th>Tytuł</th><th>Opis</th><th>Ocena</th><th>Cena</th>
-    </tr>
+    <table>
         <tr>
-            <td>{{ game.name }}</td><td>{{ game.description }}</td><td>{{ game.rating }}</td><td>{{ game.price }}</td>
+            <th>Tytuł</th>
+            <th>Opis</th>
+            <th>Ocena</th>
+            <th>Cena</th>
         </tr>
-</table>
+        <tr>
+            <td>{{ game.name }}</td>
+            <td>{{ game.description }}</td>
+            <td>{{ game.rating }}</td>
+            <td>{{ game.price }}</td>
+        </tr>
+    </table>
 {% endblock main %}
 </body>
 </html>
