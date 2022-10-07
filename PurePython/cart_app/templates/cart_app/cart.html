@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method='post'>
+        {% csrf_token %}
+        <input type="checkbox" name='cart' value='chleb'>Chleb<br>
+        <input type="checkbox" name='cart' value='mąka'>Mąka<br>
+        <input type="checkbox" name='cart' value='cebula'>Cebula<br>
+        <input type="checkbox" name='cart' value='gumy kulki'>Gumy kulki<br>
+        <input type="checkbox" name='cart' value='skyr'>Skyr<br>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>

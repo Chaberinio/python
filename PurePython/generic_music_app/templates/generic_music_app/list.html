@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista utworów</title>
+</head>
+<body>
+<a href="/music/add/">Dodaj nową piosenkę</a>
+{% for song in object_list %}
+    <p>
+        <a href="/music/details/{{ song.pk }}/">{{ song.title }}</a>
+        <a href="/music/detailsArtist/{{ song.artist.all.0.pk }}/">{{ song.artist.all.0.name }}</a>
+        <a href="/music/edit/{{ song.pk }}">Edytuj</a>
+        <a href="/music/delete/{{ song.pk }}">Usuń</a>
+    </p>
+{% endfor %}
+</body>
+</html>

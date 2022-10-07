@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="post" onchange="ValueChanged()">
+    {{ form }}
+    {% csrf_token %}
+    <input type="submit" value="Wyślij" id="send" >
+</form>
+<div id="message">
+    {{ message }}
+</div>
+
+{#<script type="text/javascript">#}
+{#    function ValueChanged() {#}
+{#        document.getElementById('message').innerHTML = "";#}
+{#        document.getElementById('send').disabled = false;#}
+{#        console.log("Zmiana")#}
+{#        let hostTeam = document.getElementById('id_hostTeam').value;#}
+{#        let guestTeam = document.getElementById('id_guestTeam').value;#}
+{#        let guestScore = parseInt(document.getElementById('id_guestScore').value);#}
+{#        let hostScore = parseInt(document.getElementById('id_hostScore').value);#}
+{#        console.log(hostTeam);#}
+{#        console.log(hostScore);#}
+{#        if (hostTeam == guestTeam) {#}
+{#            document.getElementById('message').innerHTML = "Drużyny są takie same";#}
+{#            document.getElementById('send').disabled = true;#}
+{#        }#}
+{#        if (guestScore < 0 || hostScore < 0) {#}
+{#            document.getElementById('message').innerHTML = "Punkty nie mogą być mniejsze od zera";#}
+{#            document.getElementById('send').disabled = true;#}
+{#        }#}
+{#    }#}
+{#</script>#}
+</body>
+</html>

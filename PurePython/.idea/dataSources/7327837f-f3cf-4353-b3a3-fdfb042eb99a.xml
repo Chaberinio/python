@@ -81,42 +81,42 @@
       <Deterministic>1</Deterministic>
       <Variadic>1</Variadic>
     </routine>
-    <routine id="31" parent="1" name="lag">
+    <routine id="31" parent="1" name="max">
+      <Deterministic>1</Deterministic>
+      <Variadic>1</Variadic>
+    </routine>
+    <routine id="32" parent="1" name="min">
+      <Deterministic>1</Deterministic>
+      <Variadic>1</Variadic>
+    </routine>
+    <routine id="33" parent="1" name="json_set">
+      <Deterministic>1</Deterministic>
+      <Variadic>1</Variadic>
+    </routine>
+    <routine id="34" parent="1" name="bm25">
+      <Variadic>1</Variadic>
+    </routine>
+    <routine id="35" parent="1" name="highlight">
+      <Variadic>1</Variadic>
+    </routine>
+    <routine id="36" parent="1" name="rtreecheck">
+      <Variadic>1</Variadic>
+    </routine>
+    <routine id="37" parent="1" name="lag">
       <FunctionType>window</FunctionType>
     </routine>
-    <routine id="32" parent="1" name="max">
-      <Deterministic>1</Deterministic>
-      <Variadic>1</Variadic>
-    </routine>
-    <routine id="33" parent="1" name="min">
-      <Deterministic>1</Deterministic>
-      <Variadic>1</Variadic>
-    </routine>
-    <routine id="34" parent="1" name="lead">
+    <routine id="38" parent="1" name="lead">
       <FunctionType>window</FunctionType>
     </routine>
-    <routine id="35" parent="1" name="json_set">
-      <Deterministic>1</Deterministic>
+    <routine id="39" parent="1" name="regexp">
       <Variadic>1</Variadic>
     </routine>
-    <routine id="36" parent="1" name="charindex"/>
-    <routine id="37" parent="1" name="fts3_tokenizer"/>
-    <routine id="38" parent="1" name="bm25">
+    <routine id="40" parent="1" name="charindex"/>
+    <routine id="41" parent="1" name="snippet">
       <Variadic>1</Variadic>
     </routine>
-    <routine id="39" parent="1" name="highlight">
-      <Variadic>1</Variadic>
-    </routine>
-    <routine id="40" parent="1" name="rtreecheck">
-      <Variadic>1</Variadic>
-    </routine>
-    <routine id="41" parent="1" name="matchinfo"/>
-    <routine id="42" parent="1" name="regexp">
-      <Variadic>1</Variadic>
-    </routine>
-    <routine id="43" parent="1" name="snippet">
-      <Variadic>1</Variadic>
-    </routine>
+    <routine id="42" parent="1" name="fts3_tokenizer"/>
+    <routine id="43" parent="1" name="matchinfo"/>
     <routine id="44" parent="1" name="group_concat">
       <FunctionType>window</FunctionType>
     </routine>
@@ -419,80 +419,80 @@
     <argument id="183" parent="31">
       <ArgumentDirection>R</ArgumentDirection>
     </argument>
-    <argument id="184" parent="31">
+    <argument id="184" parent="32">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="185" parent="33">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="186" parent="34">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="187" parent="35">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="188" parent="36">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="189" parent="37">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="190" parent="37">
       <Position>1</Position>
     </argument>
-    <argument id="185" parent="31">
+    <argument id="191" parent="37">
       <Position>2</Position>
     </argument>
-    <argument id="186" parent="31">
+    <argument id="192" parent="37">
       <Position>3</Position>
     </argument>
-    <argument id="187" parent="32">
+    <argument id="193" parent="38">
       <ArgumentDirection>R</ArgumentDirection>
     </argument>
-    <argument id="188" parent="33">
-      <ArgumentDirection>R</ArgumentDirection>
-    </argument>
-    <argument id="189" parent="34">
-      <ArgumentDirection>R</ArgumentDirection>
-    </argument>
-    <argument id="190" parent="34">
+    <argument id="194" parent="38">
       <Position>1</Position>
     </argument>
-    <argument id="191" parent="34">
+    <argument id="195" parent="38">
       <Position>2</Position>
     </argument>
-    <argument id="192" parent="34">
+    <argument id="196" parent="38">
       <Position>3</Position>
     </argument>
-    <argument id="193" parent="35">
+    <argument id="197" parent="39">
       <ArgumentDirection>R</ArgumentDirection>
     </argument>
-    <argument id="194" parent="36">
+    <argument id="198" parent="40">
       <ArgumentDirection>R</ArgumentDirection>
     </argument>
-    <argument id="195" parent="36">
+    <argument id="199" parent="40">
       <Position>1</Position>
     </argument>
-    <argument id="196" parent="36">
+    <argument id="200" parent="40">
       <Position>2</Position>
     </argument>
-    <argument id="197" parent="36">
+    <argument id="201" parent="40">
       <Position>3</Position>
     </argument>
-    <argument id="198" parent="37">
+    <argument id="202" parent="41">
       <ArgumentDirection>R</ArgumentDirection>
     </argument>
-    <argument id="199" parent="37">
+    <argument id="203" parent="42">
+      <ArgumentDirection>R</ArgumentDirection>
+    </argument>
+    <argument id="204" parent="42">
       <Position>1</Position>
     </argument>
-    <argument id="200" parent="37">
+    <argument id="205" parent="42">
       <Position>2</Position>
     </argument>
-    <argument id="201" parent="38">
+    <argument id="206" parent="43">
       <ArgumentDirection>R</ArgumentDirection>
     </argument>
-    <argument id="202" parent="39">
-      <ArgumentDirection>R</ArgumentDirection>
-    </argument>
-    <argument id="203" parent="40">
-      <ArgumentDirection>R</ArgumentDirection>
-    </argument>
-    <argument id="204" parent="41">
-      <ArgumentDirection>R</ArgumentDirection>
-    </argument>
-    <argument id="205" parent="41">
+    <argument id="207" parent="43">
       <Position>1</Position>
-    </argument>
-    <argument id="206" parent="41">
-      <Position>2</Position>
-    </argument>
-    <argument id="207" parent="42">
-      <ArgumentDirection>R</ArgumentDirection>
     </argument>
     <argument id="208" parent="43">
-      <ArgumentDirection>R</ArgumentDirection>
+      <Position>2</Position>
     </argument>
     <argument id="209" parent="44">
       <ArgumentDirection>R</ArgumentDirection>
@@ -1323,599 +1323,580 @@
     <table id="489" parent="166" name="django_content_type"/>
     <table id="490" parent="166" name="django_migrations"/>
     <table id="491" parent="166" name="django_session"/>
-    <table id="492" parent="166" name="gadugadu_app_message"/>
-    <table id="493" parent="166" name="gadugadu_app_person"/>
-    <table id="494" parent="166" name="games_app_category"/>
-    <table id="495" parent="166" name="games_app_game"/>
-    <table id="496" parent="166" name="games_app_game_category"/>
-    <table id="497" parent="166" name="games_app_gamedetails"/>
-    <table id="498" parent="166" name="games_app_platform"/>
-    <table id="499" parent="166" name="library_app_book"/>
-    <table id="500" parent="166" name="shop_app_myorder"/>
-    <table id="501" parent="166" name="shop_app_product"/>
-    <table id="502" parent="166" name="shop_app_productmyorder"/>
-    <table id="503" parent="166" name="sqlite_master">
+    <table id="492" parent="166" name="football_app_game"/>
+    <table id="493" parent="166" name="football_app_team"/>
+    <table id="494" parent="166" name="gadugadu_app_message"/>
+    <table id="495" parent="166" name="gadugadu_app_person"/>
+    <table id="496" parent="166" name="games_app_category"/>
+    <table id="497" parent="166" name="games_app_game"/>
+    <table id="498" parent="166" name="games_app_game_category"/>
+    <table id="499" parent="166" name="games_app_gamedetails"/>
+    <table id="500" parent="166" name="games_app_platform"/>
+    <table id="501" parent="166" name="generic_music_app_artist"/>
+    <table id="502" parent="166" name="generic_music_app_song"/>
+    <table id="503" parent="166" name="generic_music_app_song_artist"/>
+    <table id="504" parent="166" name="library_app_book"/>
+    <table id="505" parent="166" name="shop_app_myorder"/>
+    <table id="506" parent="166" name="shop_app_product"/>
+    <table id="507" parent="166" name="shop_app_productmyorder"/>
+    <table id="508" parent="166" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="504" parent="166" name="sqlite_sequence">
+    <table id="509" parent="166" name="sqlite_sequence">
       <System>1</System>
     </table>
-    <column id="505" parent="482" name="id">
+    <column id="510" parent="482" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="506" parent="482" name="name">
+    <column id="511" parent="482" name="name">
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="507" parent="482" name="sqlite_autoindex_auth_group_1">
+    <index id="512" parent="482" name="sqlite_autoindex_auth_group_1">
       <ColNames>name</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="508" parent="482">
+    <key id="513" parent="482">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="509" parent="482">
+    <key id="514" parent="482">
       <ColNames>name</ColNames>
       <UnderlyingIndexName>sqlite_autoindex_auth_group_1</UnderlyingIndexName>
     </key>
-    <column id="510" parent="483" name="id">
+    <column id="515" parent="483" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="511" parent="483" name="group_id">
+    <column id="516" parent="483" name="group_id">
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="512" parent="483" name="permission_id">
+    <column id="517" parent="483" name="permission_id">
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="513" parent="483">
+    <foreign-key id="518" parent="483">
       <ColNames>group_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_group</RefTableName>
     </foreign-key>
-    <foreign-key id="514" parent="483">
+    <foreign-key id="519" parent="483">
       <ColNames>permission_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_permission</RefTableName>
     </foreign-key>
-    <index id="515" parent="483" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+    <index id="520" parent="483" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
       <ColNames>group_id
 permission_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="516" parent="483" name="auth_group_permissions_group_id_b120cbf9">
+    <index id="521" parent="483" name="auth_group_permissions_group_id_b120cbf9">
       <ColNames>group_id</ColNames>
     </index>
-    <index id="517" parent="483" name="auth_group_permissions_permission_id_84c5c92e">
+    <index id="522" parent="483" name="auth_group_permissions_permission_id_84c5c92e">
       <ColNames>permission_id</ColNames>
     </index>
-    <key id="518" parent="483">
+    <key id="523" parent="483">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="519" parent="484" name="id">
+    <column id="524" parent="484" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="520" parent="484" name="content_type_id">
+    <column id="525" parent="484" name="content_type_id">
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="521" parent="484" name="codename">
+    <column id="526" parent="484" name="codename">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="522" parent="484" name="name">
+    <column id="527" parent="484" name="name">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="523" parent="484">
+    <foreign-key id="528" parent="484">
       <ColNames>content_type_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>django_content_type</RefTableName>
     </foreign-key>
-    <index id="524" parent="484" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+    <index id="529" parent="484" name="auth_permission_content_type_id_codename_01ab375a_uniq">
       <ColNames>content_type_id
 codename</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="525" parent="484" name="auth_permission_content_type_id_2f476e4b">
+    <index id="530" parent="484" name="auth_permission_content_type_id_2f476e4b">
       <ColNames>content_type_id</ColNames>
     </index>
-    <key id="526" parent="484">
+    <key id="531" parent="484">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="527" parent="485" name="id">
+    <column id="532" parent="485" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="528" parent="485" name="password">
+    <column id="533" parent="485" name="password">
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="529" parent="485" name="last_login">
+    <column id="534" parent="485" name="last_login">
       <DataType>datetime|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="530" parent="485" name="is_superuser">
+    <column id="535" parent="485" name="is_superuser">
       <DataType>bool|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="531" parent="485" name="username">
+    <column id="536" parent="485" name="username">
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="532" parent="485" name="last_name">
+    <column id="537" parent="485" name="last_name">
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="533" parent="485" name="email">
+    <column id="538" parent="485" name="email">
       <DataType>varchar(254)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="534" parent="485" name="is_staff">
+    <column id="539" parent="485" name="is_staff">
       <DataType>bool|0s</DataType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="535" parent="485" name="is_active">
+    <column id="540" parent="485" name="is_active">
       <DataType>bool|0s</DataType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <column id="536" parent="485" name="date_joined">
+    <column id="541" parent="485" name="date_joined">
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
-    <column id="537" parent="485" name="first_name">
+    <column id="542" parent="485" name="first_name">
       <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
-    <index id="538" parent="485" name="sqlite_autoindex_auth_user_1">
+    <index id="543" parent="485" name="sqlite_autoindex_auth_user_1">
       <ColNames>username</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="539" parent="485">
+    <key id="544" parent="485">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="540" parent="485">
+    <key id="545" parent="485">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>sqlite_autoindex_auth_user_1</UnderlyingIndexName>
     </key>
-    <column id="541" parent="486" name="id">
+    <column id="546" parent="486" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="542" parent="486" name="user_id">
+    <column id="547" parent="486" name="user_id">
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="543" parent="486" name="group_id">
+    <column id="548" parent="486" name="group_id">
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="544" parent="486">
+    <foreign-key id="549" parent="486">
       <ColNames>user_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_user</RefTableName>
     </foreign-key>
-    <foreign-key id="545" parent="486">
+    <foreign-key id="550" parent="486">
       <ColNames>group_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_group</RefTableName>
     </foreign-key>
-    <index id="546" parent="486" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+    <index id="551" parent="486" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
       <ColNames>user_id
 group_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="547" parent="486" name="auth_user_groups_user_id_6a12ed8b">
+    <index id="552" parent="486" name="auth_user_groups_user_id_6a12ed8b">
       <ColNames>user_id</ColNames>
     </index>
-    <index id="548" parent="486" name="auth_user_groups_group_id_97559544">
+    <index id="553" parent="486" name="auth_user_groups_group_id_97559544">
       <ColNames>group_id</ColNames>
     </index>
-    <key id="549" parent="486">
+    <key id="554" parent="486">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="550" parent="487" name="id">
+    <column id="555" parent="487" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="551" parent="487" name="user_id">
+    <column id="556" parent="487" name="user_id">
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="552" parent="487" name="permission_id">
+    <column id="557" parent="487" name="permission_id">
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="553" parent="487">
+    <foreign-key id="558" parent="487">
       <ColNames>user_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_user</RefTableName>
     </foreign-key>
-    <foreign-key id="554" parent="487">
+    <foreign-key id="559" parent="487">
       <ColNames>permission_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_permission</RefTableName>
     </foreign-key>
-    <index id="555" parent="487" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+    <index id="560" parent="487" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
       <ColNames>user_id
 permission_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="556" parent="487" name="auth_user_user_permissions_user_id_a95ead1b">
+    <index id="561" parent="487" name="auth_user_user_permissions_user_id_a95ead1b">
       <ColNames>user_id</ColNames>
     </index>
-    <index id="557" parent="487" name="auth_user_user_permissions_permission_id_1fbb5f2c">
+    <index id="562" parent="487" name="auth_user_user_permissions_permission_id_1fbb5f2c">
       <ColNames>permission_id</ColNames>
     </index>
-    <key id="558" parent="487">
+    <key id="563" parent="487">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <check id="559" parent="488">
+    <check id="564" parent="488">
       <Predicate>&quot;action_flag&quot; &gt;= 0</Predicate>
     </check>
-    <column id="560" parent="488" name="id">
+    <column id="565" parent="488" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="561" parent="488" name="object_id">
+    <column id="566" parent="488" name="object_id">
       <DataType>TEXT|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="562" parent="488" name="object_repr">
+    <column id="567" parent="488" name="object_repr">
       <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="563" parent="488" name="action_flag">
+    <column id="568" parent="488" name="action_flag">
       <DataType>smallint unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="564" parent="488" name="change_message">
+    <column id="569" parent="488" name="change_message">
       <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="565" parent="488" name="content_type_id">
+    <column id="570" parent="488" name="content_type_id">
       <DataType>INTEGER|0s</DataType>
       <Position>6</Position>
     </column>
-    <column id="566" parent="488" name="user_id">
+    <column id="571" parent="488" name="user_id">
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="567" parent="488" name="action_time">
+    <column id="572" parent="488" name="action_time">
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <foreign-key id="568" parent="488">
+    <foreign-key id="573" parent="488">
       <ColNames>content_type_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>django_content_type</RefTableName>
     </foreign-key>
-    <foreign-key id="569" parent="488">
+    <foreign-key id="574" parent="488">
       <ColNames>user_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_user</RefTableName>
     </foreign-key>
-    <index id="570" parent="488" name="django_admin_log_content_type_id_c4bce8eb">
+    <index id="575" parent="488" name="django_admin_log_content_type_id_c4bce8eb">
       <ColNames>content_type_id</ColNames>
     </index>
-    <index id="571" parent="488" name="django_admin_log_user_id_c564eba6">
+    <index id="576" parent="488" name="django_admin_log_user_id_c564eba6">
       <ColNames>user_id</ColNames>
     </index>
-    <key id="572" parent="488">
+    <key id="577" parent="488">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="573" parent="489" name="id">
+    <column id="578" parent="489" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="574" parent="489" name="app_label">
+    <column id="579" parent="489" name="app_label">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="575" parent="489" name="model">
+    <column id="580" parent="489" name="model">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="576" parent="489" name="django_content_type_app_label_model_76bd3d3b_uniq">
+    <index id="581" parent="489" name="django_content_type_app_label_model_76bd3d3b_uniq">
       <ColNames>app_label
 model</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="577" parent="489">
+    <key id="582" parent="489">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="578" parent="490" name="id">
+    <column id="583" parent="490" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="579" parent="490" name="app">
+    <column id="584" parent="490" name="app">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="580" parent="490" name="name">
+    <column id="585" parent="490" name="name">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="581" parent="490" name="applied">
+    <column id="586" parent="490" name="applied">
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <key id="582" parent="490">
+    <key id="587" parent="490">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="583" parent="491" name="session_key">
+    <column id="588" parent="491" name="session_key">
       <DataType>varchar(40)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="584" parent="491" name="session_data">
+    <column id="589" parent="491" name="session_data">
       <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="585" parent="491" name="expire_date">
+    <column id="590" parent="491" name="expire_date">
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="586" parent="491" name="sqlite_autoindex_django_session_1">
+    <index id="591" parent="491" name="sqlite_autoindex_django_session_1">
       <ColNames>session_key</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <index id="587" parent="491" name="django_session_expire_date_a5c62663">
+    <index id="592" parent="491" name="django_session_expire_date_a5c62663">
       <ColNames>expire_date</ColNames>
     </index>
-    <key id="588" parent="491">
+    <key id="593" parent="491">
       <ColNames>session_key</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>sqlite_autoindex_django_session_1</UnderlyingIndexName>
     </key>
-    <column id="589" parent="492" name="id">
+    <column id="594" parent="492" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="590" parent="492" name="description">
+    <column id="595" parent="492" name="hostScore">
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="596" parent="492" name="guestScore">
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="597" parent="492" name="guestTeam_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="598" parent="492" name="hostTeam_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="599" parent="492">
+      <ColNames>guestTeam_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefColNames>id</RefColNames>
+      <RefTableName>football_app_team</RefTableName>
+    </foreign-key>
+    <foreign-key id="600" parent="492">
+      <ColNames>hostTeam_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefColNames>id</RefColNames>
+      <RefTableName>football_app_team</RefTableName>
+    </foreign-key>
+    <index id="601" parent="492" name="football_app_game_guestTeam_id_e7a8d612">
+      <ColNames>guestTeam_id</ColNames>
+    </index>
+    <index id="602" parent="492" name="football_app_game_hostTeam_id_6341766c">
+      <ColNames>hostTeam_id</ColNames>
+    </index>
+    <key id="603" parent="492">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="604" parent="493" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="605" parent="493" name="name">
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <key id="606" parent="493">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="607" parent="494" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="608" parent="494" name="description">
       <DataType>varchar(140)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="591" parent="492" name="reciver_id">
+    <column id="609" parent="494" name="reciver_id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="592" parent="492" name="sender_id">
+    <column id="610" parent="494" name="sender_id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="593" parent="492">
+    <foreign-key id="611" parent="494">
       <ColNames>reciver_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>gadugadu_app_person</RefTableName>
     </foreign-key>
-    <foreign-key id="594" parent="492">
+    <foreign-key id="612" parent="494">
       <ColNames>sender_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>gadugadu_app_person</RefTableName>
     </foreign-key>
-    <index id="595" parent="492" name="gadugadu_app_message_reciver_id_d6134df7">
+    <index id="613" parent="494" name="gadugadu_app_message_reciver_id_d6134df7">
       <ColNames>reciver_id</ColNames>
     </index>
-    <index id="596" parent="492" name="gadugadu_app_message_sender_id_ac006b22">
+    <index id="614" parent="494" name="gadugadu_app_message_sender_id_ac006b22">
       <ColNames>sender_id</ColNames>
     </index>
-    <key id="597" parent="492">
+    <key id="615" parent="494">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="598" parent="493" name="id">
+    <column id="616" parent="495" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="599" parent="493" name="name">
+    <column id="617" parent="495" name="name">
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="600" parent="493" name="surName">
+    <column id="618" parent="495" name="surName">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <key id="601" parent="493">
+    <key id="619" parent="495">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="602" parent="494" name="id">
+    <column id="620" parent="496" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="603" parent="494" name="name">
+    <column id="621" parent="496" name="name">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <key id="604" parent="494">
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="605" parent="495" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <DataType>INTEGER|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="606" parent="495" name="name">
-      <DataType>varchar(128)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="607" parent="495" name="description">
-      <DataType>TEXT|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="608" parent="495" name="rating">
-      <DataType>INTEGER|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="609" parent="495" name="price">
-      <DataType>decimal|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <column id="610" parent="495" name="platform_id">
-      <DataType>bigint|0s</DataType>
-      <Position>6</Position>
-    </column>
-    <foreign-key id="611" parent="495">
-      <ColNames>platform_id</ColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <RefColNames>id</RefColNames>
-      <RefTableName>games_app_platform</RefTableName>
-    </foreign-key>
-    <index id="612" parent="495" name="games_app_game_platform_id_f7220877">
-      <ColNames>platform_id</ColNames>
-    </index>
-    <key id="613" parent="495">
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="614" parent="496" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <DataType>INTEGER|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="615" parent="496" name="game_id">
-      <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="616" parent="496" name="category_id">
-      <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <foreign-key id="617" parent="496">
-      <ColNames>game_id</ColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <RefColNames>id</RefColNames>
-      <RefTableName>games_app_game</RefTableName>
-    </foreign-key>
-    <foreign-key id="618" parent="496">
-      <ColNames>category_id</ColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <RefColNames>id</RefColNames>
-      <RefTableName>games_app_category</RefTableName>
-    </foreign-key>
-    <index id="619" parent="496" name="games_app_game_category_game_id_category_id_c5f5867a_uniq">
-      <ColNames>game_id
-category_id</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <index id="620" parent="496" name="games_app_game_category_game_id_cdb845b2">
-      <ColNames>game_id</ColNames>
-    </index>
-    <index id="621" parent="496" name="games_app_game_category_category_id_85b40e7d">
-      <ColNames>category_id</ColNames>
-    </index>
     <key id="622" parent="496">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
@@ -1926,45 +1907,43 @@ category_id</ColNames>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="624" parent="497" name="cheat_codes">
-      <DataType>varchar(512)|0s</DataType>
+    <column id="624" parent="497" name="name">
+      <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="625" parent="497" name="finished">
-      <DataType>bool|0s</DataType>
+    <column id="625" parent="497" name="description">
+      <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="626" parent="497" name="game_id">
-      <DataType>bigint|0s</DataType>
+    <column id="626" parent="497" name="rating">
+      <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="627" parent="497" name="play_time">
-      <DataType>bigint|0s</DataType>
+    <column id="627" parent="497" name="price">
+      <DataType>decimal|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <foreign-key id="628" parent="497">
-      <ColNames>game_id</ColNames>
+    <column id="628" parent="497" name="platform_id">
+      <DataType>bigint|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="629" parent="497">
+      <ColNames>platform_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
-      <RefTableName>games_app_game</RefTableName>
+      <RefTableName>games_app_platform</RefTableName>
     </foreign-key>
-    <index id="629" parent="497" name="sqlite_autoindex_games_app_gamedetails_1">
-      <ColNames>game_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Unique>1</Unique>
+    <index id="630" parent="497" name="games_app_game_platform_id_f7220877">
+      <ColNames>platform_id</ColNames>
     </index>
-    <key id="630" parent="497">
+    <key id="631" parent="497">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
-    </key>
-    <key id="631" parent="497">
-      <ColNames>game_id</ColNames>
-      <UnderlyingIndexName>sqlite_autoindex_games_app_gamedetails_1</UnderlyingIndexName>
     </key>
     <column id="632" parent="498" name="id">
       <AutoIncrement>1</AutoIncrement>
@@ -1972,149 +1951,319 @@ category_id</ColNames>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="633" parent="498" name="name">
-      <DataType>varchar(256)|0s</DataType>
+    <column id="633" parent="498" name="game_id">
+      <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <key id="634" parent="498">
+    <column id="634" parent="498" name="category_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <foreign-key id="635" parent="498">
+      <ColNames>game_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefColNames>id</RefColNames>
+      <RefTableName>games_app_game</RefTableName>
+    </foreign-key>
+    <foreign-key id="636" parent="498">
+      <ColNames>category_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefColNames>id</RefColNames>
+      <RefTableName>games_app_category</RefTableName>
+    </foreign-key>
+    <index id="637" parent="498" name="games_app_game_category_game_id_category_id_c5f5867a_uniq">
+      <ColNames>game_id
+category_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="638" parent="498" name="games_app_game_category_game_id_cdb845b2">
+      <ColNames>game_id</ColNames>
+    </index>
+    <index id="639" parent="498" name="games_app_game_category_category_id_85b40e7d">
+      <ColNames>category_id</ColNames>
+    </index>
+    <key id="640" parent="498">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="635" parent="499" name="id">
+    <column id="641" parent="499" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="636" parent="499" name="title">
+    <column id="642" parent="499" name="cheat_codes">
+      <DataType>varchar(512)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="643" parent="499" name="finished">
+      <DataType>bool|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="644" parent="499" name="game_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="645" parent="499" name="play_time">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="646" parent="499">
+      <ColNames>game_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefColNames>id</RefColNames>
+      <RefTableName>games_app_game</RefTableName>
+    </foreign-key>
+    <index id="647" parent="499" name="sqlite_autoindex_games_app_gamedetails_1">
+      <ColNames>game_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="648" parent="499">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="649" parent="499">
+      <ColNames>game_id</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_games_app_gamedetails_1</UnderlyingIndexName>
+    </key>
+    <column id="650" parent="500" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="651" parent="500" name="name">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="637" parent="499" name="author">
+    <key id="652" parent="500">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="653" parent="501" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="654" parent="501" name="name">
+      <DataType>varchar(256)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="655" parent="501" name="surname">
+      <DataType>varchar(256)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <key id="656" parent="501">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="657" parent="502" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="658" parent="502" name="title">
+      <DataType>varchar(256)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <key id="659" parent="502">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="660" parent="503" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="661" parent="503" name="song_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="662" parent="503" name="artist_id">
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <foreign-key id="663" parent="503">
+      <ColNames>song_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefColNames>id</RefColNames>
+      <RefTableName>generic_music_app_song</RefTableName>
+    </foreign-key>
+    <foreign-key id="664" parent="503">
+      <ColNames>artist_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefColNames>id</RefColNames>
+      <RefTableName>generic_music_app_artist</RefTableName>
+    </foreign-key>
+    <index id="665" parent="503" name="generic_music_app_song_artist_song_id_artist_id_713f31ed_uniq">
+      <ColNames>song_id
+artist_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="666" parent="503" name="generic_music_app_song_artist_song_id_ac1ba69b">
+      <ColNames>song_id</ColNames>
+    </index>
+    <index id="667" parent="503" name="generic_music_app_song_artist_artist_id_b950c46a">
+      <ColNames>artist_id</ColNames>
+    </index>
+    <key id="668" parent="503">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="669" parent="504" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="670" parent="504" name="title">
+      <DataType>varchar(256)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="671" parent="504" name="author">
       <DataType>varchar(512)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="638" parent="499" name="description">
+    <column id="672" parent="504" name="description">
       <DataType>varchar(512)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="639" parent="499" name="page_count">
+    <column id="673" parent="504" name="page_count">
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <key id="640" parent="499">
+    <key id="674" parent="504">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="641" parent="500" name="id">
+    <column id="675" parent="505" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="642" parent="500" name="description">
+    <column id="676" parent="505" name="description">
       <DataType>varchar(512)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <key id="643" parent="500">
+    <key id="677" parent="505">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="644" parent="501" name="id">
+    <column id="678" parent="506" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="645" parent="501" name="name">
+    <column id="679" parent="506" name="name">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <key id="646" parent="501">
+    <key id="680" parent="506">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="647" parent="502" name="id">
+    <column id="681" parent="507" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="648" parent="502" name="price">
+    <column id="682" parent="507" name="price">
       <DataType>decimal|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="649" parent="502" name="quantity">
+    <column id="683" parent="507" name="quantity">
       <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="650" parent="502" name="my_order_id">
+    <column id="684" parent="507" name="my_order_id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="651" parent="502" name="product_id">
+    <column id="685" parent="507" name="product_id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <foreign-key id="652" parent="502">
+    <foreign-key id="686" parent="507">
       <ColNames>my_order_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>shop_app_myorder</RefTableName>
     </foreign-key>
-    <foreign-key id="653" parent="502">
+    <foreign-key id="687" parent="507">
       <ColNames>product_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefColNames>id</RefColNames>
       <RefTableName>shop_app_product</RefTableName>
     </foreign-key>
-    <index id="654" parent="502" name="shop_app_productmyorder_my_order_id_f8f019c9">
+    <index id="688" parent="507" name="shop_app_productmyorder_my_order_id_f8f019c9">
       <ColNames>my_order_id</ColNames>
     </index>
-    <index id="655" parent="502" name="shop_app_productmyorder_product_id_0a663d9c">
+    <index id="689" parent="507" name="shop_app_productmyorder_product_id_0a663d9c">
       <ColNames>product_id</ColNames>
     </index>
-    <key id="656" parent="502">
+    <key id="690" parent="507">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="657" parent="503" name="type">
+    <column id="691" parent="508" name="type">
       <DataType>TEXT|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="658" parent="503" name="name">
+    <column id="692" parent="508" name="name">
       <DataType>TEXT|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="659" parent="503" name="tbl_name">
+    <column id="693" parent="508" name="tbl_name">
       <DataType>TEXT|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="660" parent="503" name="rootpage">
+    <column id="694" parent="508" name="rootpage">
       <DataType>INT|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="661" parent="503" name="sql">
+    <column id="695" parent="508" name="sql">
       <DataType>TEXT|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="662" parent="504" name="name">
+    <column id="696" parent="509" name="name">
       <Position>1</Position>
     </column>
-    <column id="663" parent="504" name="seq">
+    <column id="697" parent="509" name="seq">
       <Position>2</Position>
     </column>
   </database-model>

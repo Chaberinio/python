@@ -21,9 +21,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('firstapp.urls')),
     path('game/', include('games_app.urls')),
-    path('', include('gadugadu_app.urls')),
-    path('', include('library_app.urls')),
-    path('', include('footbal_app.urls'))
+    path('gg/', include('gadugadu_app.urls')),
+    path('lib/', include('library_app.urls')),
+    path('football/', include('football_app.urls')),
+    path('cookie/', include('cookie_app.urls')),
+    path('session/', include('sesion_app.urls')),
+    path('cart/', include('cart_app.urls')),
+    path('music/', include('generic_music_app.urls')),
+    path('user/', include('users_app.urls')),
 
 
 ]

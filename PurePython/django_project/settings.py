@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
-import footbal_app
+import football_app
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -44,7 +44,13 @@ INSTALLED_APPS = [
     'shop_app',
     'gadugadu_app',
     'library_app',
-    'footbal_app'
+    'football_app',
+    'cookie_app',
+    'sesion_app',
+    'cart_app',
+    'generic_music_app',
+    'users_app'
+
 ]
 
 MIDDLEWARE = [

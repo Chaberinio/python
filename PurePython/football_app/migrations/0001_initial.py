@@ -25,8 +25,8 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('hostScore', models.IntegerField()),
                 ('guestScore', models.IntegerField()),
-                ('guestTeam', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='guestSet', to='footbal_app.team')),
-                ('hostTeam', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='hostSet', to='footbal_app.team')),
+                ('guestTeam', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='guestSet', to='football_app.team')),
+                ('hostTeam', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='hostSet', to='football_app.team')),
             ],
         ),
     ]
